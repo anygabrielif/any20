@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="any20.MainPage">
+
+             <Grid RowDefinitions="*,100,50,50,50,50,50,50,50,100" 
+          ColumnDefinitions="*,*,*">
+
+     <Image 
+    Source="logo.jpg"
+    Aspect="AspectFit"
+    HorizontalOptions="Center"
+    VerticalOptions="FillAndExpand"
+    Margin="10"/>
+
+        <Label Grid.Row="0" Grid.ColumnSpan="3"
+               Text=" Perguntas: " 
+               FontSize="Large" 
+               HorizontalOptions="Center" />
+
+      
+        <Button Grid.Row="0" Grid.ColumnSpan="3"
+                Text="Alternativa A" 
+                BackgroundColor="Pink" 
+                TextColor="White"
+                HeightRequest="50" 
+                WidthRequest="300" />
+
+        <Button Grid.Row="0" Grid.ColumnSpan="3"
+                Text="Alternativa B" 
+                BackgroundColor="Pink" 
+                TextColor="White"
+                HeightRequest="50" 
+                WidthRequest="300" />
+
+        <Button Grid.Row="0" Grid.ColumnSpan="3"
+                Text="Alternativa C" 
+                BackgroundColor="Pink" 
+                TextColor="White"
+                HeightRequest="50" 
+                WidthRequest="300" />
+
+        <Button Grid.Row="0" Grid.ColumnSpan="3"
+                Text="Alternativa D" 
+                BackgroundColor="Pink" 
+                TextColor="White"
+                HeightRequest="50" 
+                WidthRequest="300" />
+
+        <Button Grid.Row="0" Grid.ColumnSpan="3"
+                Text="Alternativa E" 
+                BackgroundColor="Pink" 
+                TextColor="White"
+                HeightRequest="50" 
+                WidthRequest="300" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+            <Button Text="Cartas" 
+                    BackgroundColor="Pink" 
+                    TextColor="White"
+                    WidthRequest="120" />
+
+            <Button Text="Universitários" 
+                    BackgroundColor="Pink" 
+                    TextColor="White"
+                    WidthRequest="120" />
+
+            <Button Text="Retirar um " 
+                    BackgroundColor="Pink" 
+                    TextColor="White"
+                    WidthRequest="120" />
+                    </StackLayout>
+       
+     </Grid>
+</ContentPage>
+
+    
