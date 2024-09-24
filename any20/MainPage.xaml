@@ -3,75 +3,102 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="any20.MainPage">
 
-             <Grid RowDefinitions="*,100,50,50,50,50,50,50,50,100" 
+             <Grid RowDefinitions="*,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" 
           ColumnDefinitions="*,*,*">
 
-     <Image 
-    Source="logo.jpg"
-    Aspect="AspectFit"
-    HorizontalOptions="Center"
-    VerticalOptions="FillAndExpand"
-    Margin="10"/>
+ <Image Grid.Row="0" Grid.ColumnSpan="3"
+               Source="imagejogo.jpg"
+               Aspect="AspectFit"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               Margin="10" />
 
-        <Label Grid.Row="0" Grid.ColumnSpan="3"
-               Text=" Perguntas: " 
-               FontSize="Large" 
-               HorizontalOptions="Center" />
+        <Label Grid.Row="1" Grid.ColumnSpan="3"
+               Text="Texto da Pergunta"
+               BackgroundColor="White"
+               TextColor="Black"
+               FontSize="14"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Padding="10" />
 
-      
-        <Button Grid.Row="0" Grid.ColumnSpan="3"
-                Text="Alternativa A" 
-                BackgroundColor="Pink" 
+        <Button  x:Name="buttonResposta1"
+         Grid.Row="2" Grid.ColumnSpan="3"
+                Text="Pergunta a"
+                BackgroundColor="#a37621"
                 TextColor="White"
-                HeightRequest="50" 
-                WidthRequest="300" />
-
-        <Button Grid.Row="0" Grid.ColumnSpan="3"
-                Text="Alternativa B" 
-                BackgroundColor="Pink" 
+                FontSize="12"
+                HeightRequest="50"
+                Margin="10" />
+        <Button  x:Name="buttonResposta2"
+         Grid.Row="3" Grid.ColumnSpan="3"
+                Text="Pergunta b"
+                BackgroundColor="#a37621"
                 TextColor="White"
-                HeightRequest="50" 
-                WidthRequest="300" />
-
-        <Button Grid.Row="0" Grid.ColumnSpan="3"
-                Text="Alternativa C" 
-                BackgroundColor="Pink" 
+                FontSize="12"
+                HeightRequest="50"
+                Margin="10" />
+        <Button  x:Name="buttonResposta3"
+        Grid.Row="4" Grid.ColumnSpan="3"
+                Text="Pergunta c"
+                BackgroundColor="#a37621"
                 TextColor="White"
-                HeightRequest="50" 
-                WidthRequest="300" />
-
-        <Button Grid.Row="0" Grid.ColumnSpan="3"
-                Text="Alternativa D" 
-                BackgroundColor="Pink" 
+                FontSize="12"
+                HeightRequest="50"
+                Margin="10" />
+        <Button  x:Name="buttonResposta4"
+        Grid.Row="5" Grid.ColumnSpan="3"
+                Text="Pergunta d"
+                BackgroundColor="#a37621"
                 TextColor="White"
-                HeightRequest="50" 
-                WidthRequest="300" />
-
-        <Button Grid.Row="0" Grid.ColumnSpan="3"
-                Text="Alternativa E" 
-                BackgroundColor="Pink" 
+                FontSize="12"
+                HeightRequest="50"
+                Margin="10" />
+        <Button  x:Name="buttonResposta5"
+         Grid.Row="6" Grid.ColumnSpan="3"
+                Text="Pergunta e"
+                BackgroundColor="#a37621"
                 TextColor="White"
-                HeightRequest="50" 
-                WidthRequest="300" />
+                FontSize="12"
+                HeightRequest="50"
+                Margin="10" />
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
-            <Button Text="Cartas" 
-                    BackgroundColor="Pink" 
-                    TextColor="White"
-                    WidthRequest="120" />
-
-            <Button Text="Universitários" 
-                    BackgroundColor="Pink" 
-                    TextColor="White"
-                    WidthRequest="120" />
-
-            <Button Text="Retirar um " 
-                    BackgroundColor="Pink" 
-                    TextColor="White"
-                    WidthRequest="120" />
-                    </StackLayout>
        
-     </Grid>
+        <Button Grid.Row="7" Grid.Column="0"
+                Text="Cartas"
+                BackgroundColor="#a37621"
+                TextColor="White"
+                FontSize="12"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="110"
+                HeightRequest="40"
+                Margin="5" />
+
+
+        <Button Grid.Row="7" Grid.Column="1"
+                Text="Retira 1 errado"
+                BackgroundColor="#a37621"
+                TextColor="White"
+                FontSize="12"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="110"
+                HeightRequest="40"
+                Margin="5" />
+
+
+        <Button Grid.Row="7" Grid.Column="2"
+                Text="Universitário"
+                BackgroundColor="#a37621"
+                TextColor="White"
+                FontSize="12"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="110"
+                HeightRequest="40"
+                Margin="5" />
+    </Grid>
 </ContentPage>
 
     
