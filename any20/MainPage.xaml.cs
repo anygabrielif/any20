@@ -1,25 +1,34 @@
-﻿namespace any20;
+﻿﻿namespace any20;
 
 public partial class MainPage : ContentPage
 {
-    public MainPage()
-    {
-        InitializeComponent();
-    }
+	 Gerenciador gerenciador;
 
-    // Exemplo de eventos de clique dos botões
-    private void OnCartasClicked(object sender, EventArgs e)
-    {
-        // Lógica quando o botão "cartas" for clicado
-    }
+	public MainPage()
+	{
+		InitializeComponent();
+	    gerenciador= new Gerenciador (labelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5, Pontuacao, Nivel);
+	}
 
-    private void OnRetira1ErradoClicked(object sender, EventArgs e)
-    {
-        // Lógica quando o botão "retira 1 errado" for clicado
-    }
+	  void ButtonResposta1Clicked(object sender, EventArgs args)
+	{
+	    gerenciador.VerificaCorreta(1);
+	}
+	void ButtonResposta2Clicked(object sender, EventArgs args)
+	{
+		gerenciador.VerificaCorreta(2);
+	}
+	void ButtonResposta3Clicked(object sender, EventArgs args)
+	{
+		gerenciador.VerificaCorreta(3);
+	}
+	void ButtonResposta4Clicked(object sender, EventArgs args)
+	{
+		gerenciador.VerificaCorreta(4);
+	}
+	void ButtonResposta5Clicked(object sender, EventArgs args)
+	{
+		gerenciador.VerificaCorreta(5);
+	}
 
-    private void OnUniversitarioClicked(object sender, EventArgs e)
-    {
-        // Lógica quando o botão "universitário" for clicado
-    }
 }

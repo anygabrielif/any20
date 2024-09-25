@@ -1,104 +1,129 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="any20.MainPage">
+             x:Class="any20.MainPage"
+             Shell.NavBarIsVisible="false">
 
-             <Grid RowDefinitions="*,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" 
-          ColumnDefinitions="*,*,*">
-
- <Image Grid.Row="0" Grid.ColumnSpan="3"
-               Source="imagejogo.jpg"
-               Aspect="AspectFit"
-               HorizontalOptions="FillAndExpand"
-               VerticalOptions="FillAndExpand"
-               Margin="10" />
-
-        <Label Grid.Row="1" Grid.ColumnSpan="3"
-               Text="Texto da Pergunta"
-               BackgroundColor="White"
-               TextColor="Black"
-               FontSize="14"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
-               Padding="10" />
-
-        <Button  x:Name="buttonResposta1"
-         Grid.Row="2" Grid.ColumnSpan="3"
-                Text="Pergunta a"
-                BackgroundColor="#a37621"
-                TextColor="White"
-                FontSize="12"
-                HeightRequest="50"
-                Margin="10" />
-        <Button  x:Name="buttonResposta2"
-         Grid.Row="3" Grid.ColumnSpan="3"
-                Text="Pergunta b"
-                BackgroundColor="#a37621"
-                TextColor="White"
-                FontSize="12"
-                HeightRequest="50"
-                Margin="10" />
-        <Button  x:Name="buttonResposta3"
-        Grid.Row="4" Grid.ColumnSpan="3"
-                Text="Pergunta c"
-                BackgroundColor="#a37621"
-                TextColor="White"
-                FontSize="12"
-                HeightRequest="50"
-                Margin="10" />
-        <Button  x:Name="buttonResposta4"
-        Grid.Row="5" Grid.ColumnSpan="3"
-                Text="Pergunta d"
-                BackgroundColor="#a37621"
-                TextColor="White"
-                FontSize="12"
-                HeightRequest="50"
-                Margin="10" />
-        <Button  x:Name="buttonResposta5"
-         Grid.Row="6" Grid.ColumnSpan="3"
-                Text="Pergunta e"
-                BackgroundColor="#a37621"
-                TextColor="White"
-                FontSize="12"
-                HeightRequest="50"
-                Margin="10" />
-
-       
-        <Button Grid.Row="7" Grid.Column="0"
-                Text="Cartas"
-                BackgroundColor="#a37621"
-                TextColor="White"
-                FontSize="12"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                WidthRequest="110"
-                HeightRequest="40"
-                Margin="5" />
+        <Grid RowDefinitions="*,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+              ColumnDefinitions="*,*,*">
 
 
-        <Button Grid.Row="7" Grid.Column="1"
-                Text="Retira 1 errado"
-                BackgroundColor="#a37621"
-                TextColor="White"
-                FontSize="12"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                WidthRequest="110"
-                HeightRequest="40"
-                Margin="5" />
+                <Image Grid.Row="0"
+                       Grid.ColumnSpan="3"
+                       Source="imagem.jpg"
+                       Aspect="AspectFit"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand"
+                       Margin="10"/>
+
+                <Label  x:Name="labelPergunta"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="3"
+                        Text="Texto da Pergunta"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        FontSize="14"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Padding="10"/>
+
+                <Button  x:Name="ButtonResposta1"
+                         Grid.Row="2"
+                         Grid.ColumnSpan="3"
+                         Text="a-"
+                         Clicked="ButtonResposta1Clicked"
+                         BackgroundColor="#b07a15"
+                         TextColor="White"
+                         FontSize="12"
+                         HeightRequest="50"
+                         Margin="10"/>
+                <Button  x:Name="ButtonResposta2"
+                         Grid.Row="3"
+                         Grid.ColumnSpan="3"
+                         Text="b-"
+                         Clicked="ButtonResposta2Clicked"
+                         BackgroundColor="#b07a15"
+                         TextColor="White"
+                         FontSize="12"
+                         HeightRequest="50"
+                         Margin="10"/>
+                <Button  x:Name="ButtonResposta3"
+                         Grid.Row="4"
+                         Grid.ColumnSpan="3"
+                         Text="c-"
+                         Clicked="ButtonResposta3Clicked"
+                         BackgroundColor="#b07a15"
+                         TextColor="White"
+                         FontSize="12"
+                         HeightRequest="50"
+                         Margin="10"/>
+                <Button  x:Name="ButtonResposta4"
+                         Grid.Row="5"
+                         Grid.ColumnSpan="3"
+                         Text="d-"
+                         BackgroundColor="#b07a15"
+                         TextColor="White"
+                         Clicked="ButtonResposta4Clicked"
+                         FontSize="12"
+                         HeightRequest="50"
+                         Margin="10"/>
+                <Button  x:Name="ButtonResposta5"
+                         Grid.Row="6"
+                         Grid.ColumnSpan="3"
+                         Text="e-"
+                         Clicked="ButtonResposta5Clicked"
+                         BackgroundColor="#b07a15"
+                         TextColor="White"
+                         FontSize="12"
+                         HeightRequest="50"
+                         Margin="10"/>
 
 
-        <Button Grid.Row="7" Grid.Column="2"
-                Text="Universitário"
-                BackgroundColor="#a37621"
-                TextColor="White"
-                FontSize="12"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                WidthRequest="110"
-                HeightRequest="40"
-                Margin="5" />
-    </Grid>
+                <Button Grid.Row="7"
+                        Grid.Column="0"
+                        Text="Cartas"
+                        BackgroundColor="#b07a15"
+                        TextColor="White"
+                        FontSize="12"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="120"
+                        HeightRequest="40"
+                        Margin="5"/>
+                <Button Grid.Row="7"
+                        Grid.Column="1"
+                        Text="Retira 1 errado"
+                        BackgroundColor="#b07a15"
+                        TextColor="White"
+                        FontSize="12"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="120"
+                        HeightRequest="40"
+                        Margin="5"/>
+                <Button Grid.Row="7"
+                        Grid.Column="2"
+                        Text="Universitário"
+                        BackgroundColor="#b07a15"
+                        TextColor="White"
+                        FontSize="12"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="120"
+                        HeightRequest="40"
+                        Margin="5"/>
+
+                <Label   x:Name="Pontuacao"
+                        Grid.Row="8"
+                        Text="Pontuação:"
+                        Grid.ColumnSpan="2"/>
+
+                <Label  x:Name="Nivel"
+                       Grid.Row="8"
+                       Text="Nível:"
+                       Grid.Column="2"/>
+        </Grid>
+
+
+
 </ContentPage>
-
-    
