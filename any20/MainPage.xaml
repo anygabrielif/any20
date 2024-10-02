@@ -32,57 +32,60 @@
                          Grid.ColumnSpan="3"
                          Text="a-"
                          Clicked="ButtonResposta1Clicked"
-                         BackgroundColor="#b07a15"
+                         BackgroundColor="#a17b1d"
                          TextColor="White"
                          FontSize="12"
                          HeightRequest="50"
                          Margin="10"/>
+                         
                 <Button  x:Name="ButtonResposta2"
                          Grid.Row="3"
                          Grid.ColumnSpan="3"
                          Text="b-"
                          Clicked="ButtonResposta2Clicked"
-                         BackgroundColor="#b07a15"
+                         BackgroundColor="#a17b1d"
                          TextColor="White"
                          FontSize="12"
                          HeightRequest="50"
                          Margin="10"/>
+
                 <Button  x:Name="ButtonResposta3"
                          Grid.Row="4"
                          Grid.ColumnSpan="3"
                          Text="c-"
                          Clicked="ButtonResposta3Clicked"
-                         BackgroundColor="#b07a15"
+                         BackgroundColor="#a17b1d"
                          TextColor="White"
                          FontSize="12"
                          HeightRequest="50"
                          Margin="10"/>
+
                 <Button  x:Name="ButtonResposta4"
                          Grid.Row="5"
                          Grid.ColumnSpan="3"
                          Text="d-"
-                         BackgroundColor="#b07a15"
+                         BackgroundColor="#a17b1d"
                          TextColor="White"
                          Clicked="ButtonResposta4Clicked"
                          FontSize="12"
                          HeightRequest="50"
                          Margin="10"/>
+
                 <Button  x:Name="ButtonResposta5"
                          Grid.Row="6"
                          Grid.ColumnSpan="3"
                          Text="e-"
                          Clicked="ButtonResposta5Clicked"
-                         BackgroundColor="#b07a15"
+                         BackgroundColor="#a17b1d"
                          TextColor="White"
                          FontSize="12"
                          HeightRequest="50"
                          Margin="10"/>
 
-
                 <Button Grid.Row="7"
                         Grid.Column="0"
                         Text="Cartas"
-                        BackgroundColor="#b07a15"
+                        BackgroundColor="#a17b1d"
                         TextColor="White"
                         FontSize="12"
                         HorizontalOptions="Center"
@@ -90,10 +93,11 @@
                         WidthRequest="120"
                         HeightRequest="40"
                         Margin="5"/>
+
                 <Button Grid.Row="7"
                         Grid.Column="1"
                         Text="Retira 1 errado"
-                        BackgroundColor="#b07a15"
+                        BackgroundColor="#a17b1d"
                         TextColor="White"
                         FontSize="12"
                         HorizontalOptions="Center"
@@ -101,10 +105,11 @@
                         WidthRequest="120"
                         HeightRequest="40"
                         Margin="5"/>
+
                 <Button Grid.Row="7"
                         Grid.Column="2"
                         Text="Universitário"
-                        BackgroundColor="#b07a15"
+                        BackgroundColor="#a17b1d"
                         TextColor="White"
                         FontSize="12"
                         HorizontalOptions="Center"
