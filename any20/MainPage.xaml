@@ -82,9 +82,12 @@
                          HeightRequest="50"
                          Margin="10"/>
 
+
+
                 <Button Grid.Row="7"
                         Grid.Column="0"
-                        Text="Cartas"
+                        Text="Pular"
+                        Clicked="pulaclicado"
                         BackgroundColor="#04107d"
                         TextColor="White"
                         FontSize="12"
@@ -96,7 +99,8 @@
 
                 <Button Grid.Row="7"
                         Grid.Column="1"
-                        Text="Retira 1 errado"
+                        Text="Retira erradas"
+                        Clicked="retirarClicked"
                         BackgroundColor="#04107d"
                         TextColor="White"
                         FontSize="12"
@@ -109,6 +113,7 @@
                 <Button Grid.Row="7"
                         Grid.Column="2"
                         Text="Universitário"
+                        Clicked="universitarioClicked"
                         BackgroundColor="#04107d"
                         TextColor="White"
                         FontSize="12"

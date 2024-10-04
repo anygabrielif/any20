@@ -38,15 +38,22 @@ namespace any20
             ButtonResposta5.Text = Resposta5;
 
             this.ButtonResposta1!.BackgroundColor = Colors.DarkBlue;
-            this.ButtonResposta1!.TextColor       = Colors.White;
+            this.ButtonResposta1!.TextColor = Colors.White;
             this.ButtonResposta2!.BackgroundColor = Colors.DarkBlue;
-            this.ButtonResposta2!.TextColor       = Colors.White;
+            this.ButtonResposta2!.TextColor = Colors.White;
             this.ButtonResposta3!.BackgroundColor = Colors.DarkBlue;
-            this.ButtonResposta3!.TextColor       = Colors.White;
+            this.ButtonResposta3!.TextColor = Colors.White;
             this.ButtonResposta4!.BackgroundColor = Colors.DarkBlue;
-            this.ButtonResposta4!.TextColor       = Colors.White;
+            this.ButtonResposta4!.TextColor = Colors.White;
             this.ButtonResposta5!.BackgroundColor = Colors.DarkBlue;
-            this.ButtonResposta5!.TextColor       = Colors.White;
+            this.ButtonResposta5!.TextColor = Colors.White;
+
+            ButtonResposta1.IsVisible=true;
+            ButtonResposta2.IsVisible=true;
+            ButtonResposta3.IsVisible=true;
+            ButtonResposta4.IsVisible=true;
+            ButtonResposta5.IsVisible=true;
+
         }
 
         private Button QualButton(int RespostaSelecionada)
@@ -75,8 +82,8 @@ namespace any20
             }
             else
             {
-                var ButtonCorreto = QualButton (Respostacorreta);
-                var ButtonIncorreto = QualButton (RespostaSelecionada);
+                var ButtonCorreto = QualButton(Respostacorreta);
+                var ButtonIncorreto = QualButton(RespostaSelecionada);
                 ButtonCorreto.BackgroundColor = Colors.Yellow;
                 ButtonIncorreto.BackgroundColor = Colors.Red;
                 return false;
@@ -96,5 +103,13 @@ namespace any20
             ButtonResposta4 = button4;
             ButtonResposta5 = button5;
         }
+        public bool Equals(Questao Q)
+        {
+            return this.Nivelresposta == Q.Nivelresposta &&
+             this.Pergunta == Q.Pergunta;
+        }
+
+
     }
+
 }
