@@ -4,6 +4,9 @@ public partial class MainPage : ContentPage
 {
 	Gerenciador gerenciador;
 
+	private int pula3vezes=0;
+	int pula=0;
+
 	public MainPage()
 	{
 		InitializeComponent();
@@ -41,9 +44,38 @@ public partial class MainPage : ContentPage
 	}
 
 	void pulaclicado(object sender, EventArgs args)
-	{
+
+{
+		pula3vezes++;
+		pula++;
 		gerenciador.ProximaQuestao();
-		(sender as Button).IsVisible = false;
+
+	if ( pula == 2 )
+	{
+	(sender as Button).IsVisible = false;
+	}
+	else
+	{
+	gerenciador.ProximaQuestao();
+	pula++;
+	}
+
+		gerenciador.ProximaQuestao();
+		
+
+		if (pula3vezes==1)
+		{
+			pular.Text="pula2x";
+		}
+		else if (pula3vezes==2)
+		{
+			pular.Text="pula1x";
+		}
+		else if(pula3vezes>=3)
+		{
+			(sender as Button).IsVisible = false;
+		}
+
 	}
 void universitarioClicked(object sender, EventArgs args)
 	{
@@ -51,6 +83,10 @@ void universitarioClicked(object sender, EventArgs args)
 		ajuda.ConfiguraDesenho( ButtonResposta1, ButtonResposta2,  ButtonResposta3,  ButtonResposta4, ButtonResposta5);
 		ajuda.RealizaAjuda(gerenciador.GetQuestaoCorrente());
 		(sender as Button).IsVisible = false;
+
+
+
+
 
 	}
 

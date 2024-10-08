@@ -84,9 +84,10 @@
 
 
 
-                <Button Grid.Row="7"
+                <Button  x:Name="pular"
+                        Grid.Row="7"
                         Grid.Column="0"
-                        Text="Pular"
+                        Text="Pular 3x"
                         Clicked="pulaclicado"
                         BackgroundColor="#04107d"
                         TextColor="White"
